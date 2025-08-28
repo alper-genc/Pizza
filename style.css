@@ -1,0 +1,533 @@
+/* General Styles - Tüm Sayfanın Ortak ayarı */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Ana Sayfa Stilleri - HOME PAGE */
+body {
+  background-color: #faf7f2;
+  font-family: "Barlow", sans-serif;
+}
+/*------------BANNER SAYFASI BASLANGIC *------------/
+
+/* Ana Bölüm Stilleri - HERO SECTION */
+.hero-section {
+  background-image: url("./public/assets/iteration-1/home-banner.png");
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+/* Home Container - Ana Konteyner */
+.home-container {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  top: 2rem;
+}
+/* Giriş sayfasındaki Logo Stili */
+.logo {
+  width: 70%;
+  height: auto;
+}
+/* Giriş sayfasındaki Header Content - Başlık İçeriği */
+.header-content h4 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fdc913;
+  font-size: 2rem;
+}
+/* Giriş sayfasındaki Main Heading - Ana Başlık */
+.header-content h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5rem;
+  margin: 0.2rem 0;
+}
+/* Giriş Sayfasındaki Buton Stili */
+button {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  background-color: #fdc913;
+  letter-spacing: 0%;
+  width: 12rem;
+  border: none;
+  border-radius: 999px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Buton Hover Efekti */
+button:hover {
+  background-color: #f1b400;
+}
+/*------------BANNER SAYFASI SONU*------------/
+/*------------Menü Kategorileri BASLANGIC*------------/
+
+
+/* Menü Kategorileri Stili */
+.menu-categories {
+  background-color: white;
+  padding: 2px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+/*  Menü Kategorileri İçeriği */
+.menu-categories .categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Menü Kategorileri Link Stili */
+.menu-categories .categories a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+/* Menü Kategorileri Yazı Stili */
+.menu-categories .categories span {
+  color: #292929;
+  padding: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+/* Menü Kategorileri Hover Efekti */
+.menu-categories .categories span:hover {
+  color: #fdc913;
+}
+
+/*------------Menü Kategorileri END*------------/
+
+/*------------CARD BÖLÜMÜNÜN BAŞLANGICI*------------/
+
+/* Kampanya Bölümü Stili */
+.campaign-section {
+  padding: 30px 0;
+}
+/* Kampanya Bölümü İçeriği */
+.campaign-section .campaign-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  max-width: 1072px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+/* Kırmızı Kampanya Kartı Stili */
+.campaign-card-red {
+  grid-row: 1/3;
+  grid-column: 1;
+  background-image: url("./public/assets/iteration-2/cta/kart-1.png");
+  background-size: cover;
+  background-color: #ce2829;
+  background-position: right center;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 449px;
+}
+/* Kırmızı Kampanya Kartı İçeriği */
+.campaign-card-red div h2 {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-size: 4.25em;
+  margin-bottom: 5px;
+}
+/* Kırmızı Kampanya Kartı Alt Başlık Stili */
+.campaign-card-red div h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}
+/* Kırmızı Kampanya Kartı Buton Stili */
+.campaign-card-dark {
+  background-image: url("./public/assets/iteration-2/cta/burger.png");
+  background-size: contain;
+  background-color: #292929;
+  background-position: right;
+  background-repeat: no-repeat;
+  grid-column: 2;
+  grid-row: 1;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+/* Kırmızı Kampanya Kartı Buton İçeriği */
+.campaign-card-dark div h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+/* Sarı Kampanya Kartı Stili */
+.campaign-card-yellow {
+  background-image: url("./public/assets/iteration-2/cta/yol.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  grid-column: 2;
+  grid-row: 2;
+  color: #292929;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+/* Sarı Kampanya Kartı İçeriği */
+.campaign-card-yellow img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  z-index: 1;
+}
+/* Sarı Kampanya Kartı Başlık Stili */
+.campaign-card-yellow div h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+/* Sarı Kampanya Kartı Başlık Vurgusu */
+.campaign-card-yellow h2 span {
+  font-weight: bold;
+  color: #d80027;
+}
+/* Kampanya Kartı Buton Stili */
+.campaign-container button {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  width: 138px;
+  height: 48px;
+  background-color: white;
+  color: #ce2829;
+  border: none;
+  padding: 3px 18px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Kampanya Kartı Buton Hover Efekti */
+.campaign-container button:hover {
+  background-color: #eee;
+  color: #c0392b;
+}
+/*------------CARD BÖLÜMÜNÜN SONU*------------/
+
+
+/* Menü Bölümü Stili */
+.menu-section {
+  padding: 1rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* Menü Bölümü Alt Başlık Stili */
+.menu-section .menu-subtitle {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #ce2829;
+  margin-bottom: 5px;
+}
+/* Menü Bölümü Başlık Stili */
+.menu-section h2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.62rem;
+  color: #292929;
+  margin-bottom: 2rem;
+}
+/* Menü Bölümü Sekmeler Stili */
+.menu-section .menu-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+/* Menü Bölümü Sekme Buton Stili */
+.menu-tabs .tab {
+  border: none;
+  border-radius: 3.125rem;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+/* Menü Bölümü Sekme Buton Hover Efekti */
+.menu-tabs .tab:hover {
+  border-color: #e44d26;
+  color: #e44d26;
+}
+/* Menü Bölümü Sekme Buton İkon Stili */
+.menu-tabs .tab img {
+  width: 2.62rem;
+  height: 2.62rem;
+}
+/* Menü Bölümü Aktif Sekme Buton Stili */
+.menu-tabs .tab.active {
+  background-color: #292929;
+  color: white;
+  box-shadow: 0 4px 8px rgba(228, 77, 38, 0.2);
+}
+/* Menü Kartları Stili */
+.menu-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+/* Menü Kartları İçeriği */
+.menu-cards .menu-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+/* Menü Kartları Resim Stili */
+.menu-cards .menu-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+/* Menü Kartları Başlık Stili */
+.menu-cards .menu-card h4 {
+  text-align: start;
+}
+
+.menu-cards .menu-card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+/* Menü Kartları Alt Başlık Stili */
+.menu-cards .menu-card div span {
+  margin-left: 50px;
+}
+/* Menü Kartları Puan Stili */
+.puan {
+  margin-bottom: 0.25rem;
+}
+/* Menü Kartları Puan Yıldız Stili */
+.puan span {
+  margin-left: 0.5nrem;
+}
+/* Menü Kartları Fiyat Stili */
+.price {
+  font-weight: bold;
+}
+/* Footer Bölümü Stili */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 3rem 1.5rem;
+}
+/* Footer İçeriği Stili */
+.footers {
+  max-width: 1200px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+/* Footer Bölümleri Stili */
+.footer-1,
+.footer-2,
+.footer-3 {
+  flex: 1;
+  width: 306px;
+  height: 314px;
+}
+/* Footer Bölümleri İçeriği Stili */
+.footer-2,
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4.25rem;
+}
+/* Footer Logo Stili */
+.footer-1:first-child {
+  width: 251px;
+  height: 100px;
+}
+/* Footer İletişim İçeriği Stili */
+.communication-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* Footer İletişim İçeriği Satır Stili */
+.footer-1 .communication-content div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0.8rem;
+  justify-content: flex-start;
+}
+/* Footer İletişim İçeriği İkon Stili */
+.communication-content img {
+  width: 28px;
+  height: 28px;
+}
+/* Footer İletişim İçeriği Yazı Stili */
+.footer-2 h3,
+.footer-3 h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+/* Footer İletişim İçeriği Paragraf Stili */
+.footer-2 p,
+.footer-3 p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+/* Footer Instagram İçeriği Stili */
+.instegram-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+/* Footer Instagram Resim Stili */
+.instegram-content img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+/* Footer Alt Satır Stili */
+.footer-row {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(65, 65, 65, 0.5);
+}
+/* Footer Alt Satır İçeriği Stili */
+.footer-row div {
+  display: flex;
+  width: 1200px;
+  height: 27px;
+  justify-content: space-between;
+}
+/* media Queries - Responsive Tasarım */
+/* Mobil Cihazlar için Stiller */
+@media (max-width: 768px) {
+  .hero-section {
+    background-color: #ce2829;
+    background-image: url("./public/assets/iteration-1/Home_banner_for-mobile.png");
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  /* Ana Konteyner Stili */
+  .home-container {
+    margin-top: 7.5rem;
+    gap: 40px;
+  }
+  /* Giriş sayfasındaki Logo Stili */
+  .header-content h4 {
+    display: none;
+  }
+  /* Giriş sayfasındaki Main Heading - Ana Başlık */
+  .menu-categories .categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 41px;
+    width: 100%;
+    padding: 32px;
+    margin: 0 auto;
+  }
+  /* Menü Kategorileri Link Stili */
+  .menu-categories .categories a {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    gap: 16px;
+  }
+  /* Menü Kategorileri Yazı Stili */
+  .campaign-section .campaign-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Kırmızı Kampanya Kartı Stili */
+  .menu-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Menü Kartları Stili */
+  .footers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  /* Footer Bölümleri Stili */
+  .footer-row div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
